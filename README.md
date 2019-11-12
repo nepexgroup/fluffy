@@ -15,7 +15,14 @@
 
 #### Methodology
 - BEM 
-
+- CSS Specificity
+- CSS Selectors
+    - Attributes with exact value [attribute="value"]
+    - Attributes which begin with [attribute^="value"]
+    - Whitespace separated attribute values [attribute~="value"]
+    - Attribute values ending with [attribute$="value"]
+    - Attributes containing strings [attribute*="value"]
+- Traditional box model
 #### Cross-browser Compatibility Test
 - https://crossbrowsertesting.com/
 - https://www.browserling.com/

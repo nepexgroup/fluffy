@@ -6,8 +6,8 @@ gulp.task('compass', function () {
             sass: 'src/styles',
             image: 'src/images',
             css: 'dist/css',
-            sourcemap: true,
-            style: 'compressed'
+            // sourcemap: true,
+            // style: 'compressed'
         }));
 });
 gulp.task('default', function () {
