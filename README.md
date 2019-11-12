@@ -15,6 +15,8 @@
 
 #### Methodology
 - BEM 
+
+#### Terminology
 - CSS Specificity
 - CSS Selectors
     - Attributes with exact value [attribute="value"]
@@ -23,6 +25,10 @@
     - Attribute values ending with [attribute$="value"]
     - Attributes containing strings [attribute*="value"]
 - Traditional box model
+- CSS Position Property
+- Floating Elements
+- Display Types
+
 #### Cross-browser Compatibility Test
 - https://crossbrowsertesting.com/
 - https://www.browserling.com/

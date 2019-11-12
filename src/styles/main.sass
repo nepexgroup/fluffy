@@ -35,3 +35,16 @@ $size: 100px
   color: yellowgreen
   font:
     weight: bold
+
+*
+  box-sizing: border-box
+
+=clear
+  &:after
+    content: ""
+    visibility: hidden
+    display: block
+    height: 0
+    clear: both
+//.row
+//  +clear

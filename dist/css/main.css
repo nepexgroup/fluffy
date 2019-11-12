@@ -37,3 +37,7 @@
   color: yellowgreen;
   font-weight: bold;
 }
+
+* {
+  box-sizing: border-box;
+}
