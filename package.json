@@ -1,0 +1,23 @@
+{
+  "name": "fluffy",
+  "version": "1.0.0",
+  "description": "Css Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nepexgroup/fluffy.git"
+  },
+  "author": "Sandesh Rana(vimm0)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nepexgroup/fluffy/issues"
+  },
+  "homepage": "https://github.com/nepexgroup/fluffy#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-compass": "^2.1.0"
+  }
+}
