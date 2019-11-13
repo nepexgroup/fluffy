@@ -14,7 +14,9 @@
 - bourbon/compass
 
 #### Methodology
-- BEM 
+- Scalable and Modular Architecture for CSS (SMACSS) https://smacss.com/
+- Object Oriented CSS (OOCSS) http://oocss.org/
+- Block Element Modifier (BEM) https://en.bem.info/
 
 #### Terminology
 - CSS Specificity
@@ -28,6 +30,12 @@
 - CSS Position Property
 - Floating Elements
 - Display Types
+- Responsive
+- Sprite CSS
+- base64 images
+- Email Template
+    - [Zurb Foundation](https://foundation.zurb.com/)
+- [UnCss](https://github.com/uncss/uncss)
 
 #### Cross-browser Compatibility Test
 - https://crossbrowsertesting.com/
