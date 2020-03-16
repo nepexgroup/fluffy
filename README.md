@@ -1,13 +1,22 @@
 ### Fluffy
-> Css Framerok
+> Css Framework/theme using bootstrap
 
+- framework used bootstrap
 - Preprocessor
     - Less
     - Stylus
     - Sass
+    
 #### Directory Structure
 - `src` : folder to keep our source files
 - `dist` : folder to keep our compiled files
+
+#### Gulp Guide
+- https://fettblog.eu/gulp-4-parallel-and-series/
+
+### HOW TO Contribute
+- Edit sass file from `src/scss` with the help of [sass docs](https://sass-lang.com/documentation)
+- run `gulp` in the terminal.
 
 #### Choice preprocessor
 - sass
@@ -43,3 +52,12 @@
 - https://www.browserstack.com/
 - http://caniuse.com/
 - create virtual box and test with browser you want.
+
+#### Road map
+- Get final product independent of bootstrap
+
+#### References
+- http://themes.guide/
+- https://medium.com/@iampuredanger/customize-bootstrap-4-sass-w-gulp-95098f13333
+- https://themestr.app/
+- https://uxplanet.org/how-to-customize-bootstrap-b8078a011203
