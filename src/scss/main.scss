@@ -1,0 +1,19 @@
+$primary: #1633ff !important;
+$secondary: #a0b7bc;
+$success: #1633ff;
+$danger: #00f900;
+$info: #7ebcfa;
+$warning: #00f900;
+$light: #eef0f2;
+$dark: #000633;
+//$theme-colors: ( "primary":#ffd800);
+.btn-primary {
+    color: #fff;
+    background-color: $primary;
+    border-color: $primary;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: $secondary;
+    border-color: $secondary;
+}
