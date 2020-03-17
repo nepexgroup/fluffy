@@ -61,3 +61,4 @@
 - https://medium.com/@iampuredanger/customize-bootstrap-4-sass-w-gulp-95098f13333
 - https://themestr.app/
 - https://uxplanet.org/how-to-customize-bootstrap-b8078a011203
+- http://bootstrap.themes.guide/how-to-customize-bootstrap.html
