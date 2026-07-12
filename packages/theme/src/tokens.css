@@ -1,0 +1,181 @@
+/**
+ * Fluffy design tokens.
+ *
+ * Raw palettes are static; semantic tokens (--surface-*, --ink-*, --outline-*)
+ * flip under [data-theme="dark"]. Components only ever reference semantic
+ * tokens (via the Tailwind preset), so dark mode is a root attribute away.
+ */
+:root {
+  /* ------- raw palette ------- */
+  --f-gray-50: #f8f8f8;
+  --f-gray-100: #f3f3f3;
+  --f-gray-200: #ededed;
+  --f-gray-300: #e2e2e2;
+  --f-gray-400: #c7c7c7;
+  --f-gray-500: #999999;
+  --f-gray-600: #7c7c7c;
+  --f-gray-700: #525252;
+  --f-gray-800: #383838;
+  --f-gray-900: #171717;
+
+  --f-blue-50: #f0f6fe;
+  --f-blue-100: #d3e3fc;
+  --f-blue-200: #a7c6f9;
+  --f-blue-300: #7aa6f5;
+  --f-blue-400: #4b8af0;
+  --f-blue-500: #2376e5;
+  --f-blue-600: #1866d1;
+  --f-blue-700: #1456b0;
+  --f-blue-800: #10448c;
+  --f-blue-900: #0c3364;
+
+  --f-green-50: #edf8f1;
+  --f-green-100: #d2eedd;
+  --f-green-200: #a8debd;
+  --f-green-300: #7bcc9c;
+  --f-green-400: #4cb97b;
+  --f-green-500: #29a368;
+  --f-green-600: #218b55;
+  --f-green-700: #1a7346;
+  --f-green-800: #145a37;
+  --f-green-900: #0e4228;
+
+  --f-red-50: #fdf3f3;
+  --f-red-100: #fbdddd;
+  --f-red-200: #f6bcbc;
+  --f-red-300: #f09494;
+  --f-red-400: #e86c6c;
+  --f-red-500: #db4747;
+  --f-red-600: #c23434;
+  --f-red-700: #a22b2b;
+  --f-red-800: #822222;
+  --f-red-900: #611a1a;
+
+  --f-amber-50: #fef7ec;
+  --f-amber-100: #fcebcb;
+  --f-amber-200: #f8d699;
+  --f-amber-300: #f3bf66;
+  --f-amber-400: #eda73d;
+  --f-amber-500: #e28e20;
+  --f-amber-600: #c27618;
+  --f-amber-700: #9f5f14;
+  --f-amber-800: #7d4a10;
+  --f-amber-900: #5b360c;
+
+  /* ------- semantic: surfaces ------- */
+  --surface-white: #ffffff;
+  --surface-gray-1: var(--f-gray-50);
+  --surface-gray-2: var(--f-gray-100);
+  --surface-gray-3: var(--f-gray-200);
+  --surface-gray-4: var(--f-gray-300);
+  --surface-gray-5: var(--f-gray-400);
+  --surface-gray-6: var(--f-gray-600);
+  --surface-gray-7: var(--f-gray-800);
+  --surface-black: var(--f-gray-900);
+  --surface-modal: #ffffff;
+  --surface-menu-bar: var(--f-gray-100);
+  --surface-selected: #ffffff;
+
+  --surface-blue-1: var(--f-blue-50);
+  --surface-blue-2: var(--f-blue-100);
+  --surface-green-1: var(--f-green-50);
+  --surface-green-2: var(--f-green-100);
+  --surface-red-1: var(--f-red-50);
+  --surface-red-2: var(--f-red-100);
+  --surface-amber-1: var(--f-amber-50);
+  --surface-amber-2: var(--f-amber-100);
+
+  /* ------- semantic: ink (text & icons) ------- */
+  --ink-white: #ffffff;
+  --ink-gray-1: var(--f-gray-50);
+  --ink-gray-2: var(--f-gray-200);
+  --ink-gray-3: var(--f-gray-300);
+  --ink-gray-4: var(--f-gray-400);
+  --ink-gray-5: var(--f-gray-500);
+  --ink-gray-6: var(--f-gray-600);
+  --ink-gray-7: var(--f-gray-700);
+  --ink-gray-8: var(--f-gray-800);
+  --ink-gray-9: var(--f-gray-900);
+
+  --ink-blue-1: var(--f-blue-700);
+  --ink-blue-2: var(--f-blue-600);
+  --ink-blue-3: var(--f-blue-500);
+  --ink-green-1: var(--f-green-700);
+  --ink-green-2: var(--f-green-600);
+  --ink-red-1: var(--f-red-700);
+  --ink-red-2: var(--f-red-600);
+  --ink-amber-1: var(--f-amber-700);
+  --ink-amber-2: var(--f-amber-600);
+
+  /* ------- semantic: outlines (borders & rings) ------- */
+  --outline-gray-1: var(--f-gray-200);
+  --outline-gray-2: var(--f-gray-300);
+  --outline-gray-3: var(--f-gray-400);
+  --outline-gray-4: var(--f-gray-500);
+  --outline-gray-5: var(--f-gray-600);
+  --outline-modal: var(--f-gray-200);
+  --outline-blue: var(--f-blue-300);
+  --outline-green: var(--f-green-300);
+  --outline-red: var(--f-red-300);
+  --outline-amber: var(--f-amber-300);
+
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --surface-white: #191919;
+  --surface-gray-1: #1f1f1f;
+  --surface-gray-2: #242424;
+  --surface-gray-3: #2c2c2c;
+  --surface-gray-4: #383838;
+  --surface-gray-5: #525252;
+  --surface-gray-6: #999999;
+  --surface-gray-7: #ededed;
+  --surface-black: #ffffff;
+  --surface-modal: #242424;
+  --surface-menu-bar: #1f1f1f;
+  --surface-selected: #333333;
+
+  --surface-blue-1: #14263d;
+  --surface-blue-2: #1a3153;
+  --surface-green-1: #122a1d;
+  --surface-green-2: #173524;
+  --surface-red-1: #331919;
+  --surface-red-2: #46201f;
+  --surface-amber-1: #33270f;
+  --surface-amber-2: #453312;
+
+  --ink-white: #191919;
+  --ink-gray-1: #242424;
+  --ink-gray-2: #2c2c2c;
+  --ink-gray-3: #383838;
+  --ink-gray-4: #525252;
+  --ink-gray-5: #7c7c7c;
+  --ink-gray-6: #999999;
+  --ink-gray-7: #c7c7c7;
+  --ink-gray-8: #e2e2e2;
+  --ink-gray-9: #f1f1f1;
+
+  --ink-blue-1: var(--f-blue-300);
+  --ink-blue-2: var(--f-blue-400);
+  --ink-blue-3: var(--f-blue-400);
+  --ink-green-1: var(--f-green-300);
+  --ink-green-2: var(--f-green-400);
+  --ink-red-1: var(--f-red-300);
+  --ink-red-2: var(--f-red-400);
+  --ink-amber-1: var(--f-amber-300);
+  --ink-amber-2: var(--f-amber-400);
+
+  --outline-gray-1: #2c2c2c;
+  --outline-gray-2: #383838;
+  --outline-gray-3: #525252;
+  --outline-gray-4: #7c7c7c;
+  --outline-gray-5: #999999;
+  --outline-modal: #383838;
+  --outline-blue: var(--f-blue-800);
+  --outline-green: var(--f-green-800);
+  --outline-red: var(--f-red-800);
+  --outline-amber: var(--f-amber-800);
+
+  color-scheme: dark;
+}

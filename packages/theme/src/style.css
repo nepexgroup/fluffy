@@ -1,0 +1,7 @@
+/* Prebuilt stylesheet for consumers who don't run Tailwind themselves.
+   Built by the theme package's build script: Tailwind scans the fluffy
+   packages' sources so every utility used by any component is included. */
+@tailwind base;
+@import './tokens.css';
+@import './base.css';
+@tailwind utilities;
