@@ -1,30 +1,25 @@
 {
   "name": "fluffy",
-  "version": "1.0.0",
-  "description": "Css Framework",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fluffy — a frappe-ui-style component library for Vue 3 and React",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nepexgroup/fluffy.git"
   },
-  "author": "Sandesh Rana(vimm0)",
+  "author": "Sandesh Rana (vimm0)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nepexgroup/fluffy/issues"
+  "scripts": {
+    "build": "pnpm --filter \"./packages/*\" -r build",
+    "typecheck": "pnpm --filter \"./packages/*\" -r typecheck",
+    "storybook": "pnpm --filter \"./apps/*\" --parallel -r storybook",
+    "build-storybook": "pnpm --filter \"./apps/*\" -r build-storybook"
   },
-  "homepage": "https://github.com/nepexgroup/fluffy#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp-compass": "^2.1.0",
-    "gulp-sass": "^4.0.2"
+    "typescript": "^5.6.3"
   },
-  "dependencies": {
-    "bootstrap": "^4.4.1",
-    "gulp": "^4.0.2",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.16.1"
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=20"
   }
 }
